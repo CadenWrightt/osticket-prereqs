@@ -41,7 +41,9 @@ First, create a virtual machine in azure make sure it's windows 10 with 4 vCPUs,
 <br />
 
 <p>
-![image](https://github.com/user-attachments/assets/d696c202-9862-4415-bc5a-f0ed484d16d7)
+
+  ![image](https://github.com/user-attachments/assets/20be8764-96fd-41c1-9331-22e49cb82c06)
+
 
 </p>
 <p>
