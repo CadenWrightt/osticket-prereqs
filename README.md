@@ -76,13 +76,15 @@ Assign Permissions: ost-config.php, Disable inheritance -> Remove All, New Permi
 
 ![Screenshot 2024-12-06 101604](https://github.com/user-attachments/assets/f9b6390e-f434-4305-9f0b-2c2917e06b6c)
 
+Continue Setting up osTicket in the browser (click Continue) | From the “osTicket-Installation-Files” folder, install HeidiSQL, Open Heidi SQL, Create a new session, root/root, Connect to the session, 
+
 ![Screenshot 2024-12-06 101956](https://github.com/user-attachments/assets/16776809-23aa-4896-90bc-f929e4a8d9b2)
 
 
 <p>
 </p>
 <p>
-Continue Setting up osTicket in the browser (click Continue) | From the “osTicket-Installation-Files” folder, install HeidiSQL, Open Heidi SQL, Create a new session, root/root, Connect to the session, Create a database called “osTicket” | Continue Setting up osTicket in the browser, MySQL Database: osTicket, MySQL Username: root, MySQL Password: root, Click “Install Now!”
+Create a database called “osTicket” | Continue Setting up osTicket in the browser, MySQL Database: osTicket, MySQL Username: root, MySQL Password: root, Click “Install Now!”
 </p>
 <br />
 
