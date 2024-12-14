@@ -47,7 +47,7 @@ Within the osTicket virtual machine download osTicket-Installation-Files.zip and
 
 </p>
 <p>
-Within the osTicket virtual machine download osTicket-Installation-Files.zip and unzip it onto your desktop | install / enable IIS in Windows with CGI | From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi) | From the same folder, install the Rewrite Module (rewrite_amd64_en-US.msi) | Create the directory C:\PHP | From the same folder, unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder | From the same osTicket folder, install VC_redist.x86.exe. | From the “osTicket-Installation-Files” folder install MySQL 5.5.62, Launch Configuration Wizard (after install) Standard Configuration | Username: root Password: root, then open IIS as an admin
+Create the directory C:\PHP | From the same folder, unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder | From the same osTicket folder, install VC_redist.x86.exe. | From the “osTicket-Installation-Files” folder install MySQL 5.5.62, Launch Configuration Wizard (after install) Standard Configuration | Username: root Password: root, then open IIS as an admin
 
 </p>
 <br />
@@ -56,15 +56,21 @@ Within the osTicket virtual machine download osTicket-Installation-Files.zip and
 
   ![Screenshot 2024-12-06 100258](https://github.com/user-attachments/assets/da029ee5-73c7-4421-932e-3c582559e376)
 
+  Register PHP from within IIS | Reload IIS (Open IIS, Stop and Start the server) | Install osTicket v1.15.8, From the “osTicket-Installation-Files” folder, unzip “osTicket-v1.15.8.zip” and copy the “upload” folder into “c:\inetpub\wwwroot”, Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket” | Reload IIS (Open IIS, Stop and Start the server) | 
+
 ![Screenshot 2024-12-06 100802](https://github.com/user-attachments/assets/6bd1fbfb-fa35-4332-98e5-da56305f77fc)
 
+On the right, click “Browse *:80”, Note that some extensions are not enabled, Click “Enable or disable an extension", Enable: php_imap.dll, Enable: php_intl.dll, Enable: php_opcache.dll, Refresh the osTicket site in your browser, observe the changes |
+
 ![Screenshot 2024-12-06 100938](https://github.com/user-attachments/assets/41e09cd1-01dd-49de-a802-90dfcbbbd413)
+
+Rename: ost-config.php From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php, To: C:\inetpub\wwwroot\osTicket\include\ost-config.php | 
 
 ![Screenshot 2024-12-06 101204](https://github.com/user-attachments/assets/d3395c0d-b843-4aef-a28a-9a37e0d674df)
 
 </p>
 <p>
-Register PHP from within IIS | Reload IIS (Open IIS, Stop and Start the server) | Install osTicket v1.15.8, From the “osTicket-Installation-Files” folder, unzip “osTicket-v1.15.8.zip” and copy the “upload” folder into “c:\inetpub\wwwroot”, Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket” | Reload IIS (Open IIS, Stop and Start the server) | On the right, click “Browse *:80”, Note that some extensions are not enabled, Click “Enable or disable an extension", Enable: php_imap.dll, Enable: php_intl.dll, Enable: php_opcache.dll, Refresh the osTicket site in your browser, observe the changes | Rename: ost-config.php From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php, To: C:\inetpub\wwwroot\osTicket\include\ost-config.php | Assign Permissions: ost-config.php, Disable inheritance -> Remove All, New Permissions -> Everyone -> All
+Assign Permissions: ost-config.php, Disable inheritance -> Remove All, New Permissions -> Everyone -> All
 </p>
 <br />
 
