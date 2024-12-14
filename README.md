@@ -40,6 +40,8 @@ First, create a virtual machine in azure make sure it's windows 10 with 4 vCPUs,
 <p>
 
   ![image](https://github.com/user-attachments/assets/20be8764-96fd-41c1-9331-22e49cb82c06)
+  
+Within the osTicket virtual machine download osTicket-Installation-Files.zip and unzip it onto your desktop | install / enable IIS in Windows with CGI | From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi) | From the same folder, install the Rewrite Module (rewrite_amd64_en-US.msi) | 
 
 ![image](https://github.com/user-attachments/assets/38477c6d-8761-40ef-a20c-b3e9465fc8b0)
 
